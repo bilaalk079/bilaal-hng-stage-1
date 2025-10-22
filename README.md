@@ -335,19 +335,3 @@ curl "http://localhost:5000/strings/filter-by-natural-language?query=palindromic
 - SHA-256 hashes are case-sensitive and reflect the original string casing
 
 ---
-
-## 🐛 Common Issues
-
-**MongoDB Connection Error:**
-```bash
-# Ensure MongoDB is running
-mongod --dbpath /path/to/data/directory
-```
-
-**Port Already in Use:**
-```bash
-# Change PORT in .env or kill the process using the port
-lsof -ti:5000 | xargs kill -9
-```
-
----
