@@ -53,7 +53,7 @@ npm install
 
 Create a `.env` file in the root directory:
 ```env
-MONGO_URI=mongodb://127.0.0.1:27017/string_analyzer
+MONGO_URI="your connection string"
 PORT=5000
 ```
 
