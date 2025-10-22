@@ -9,6 +9,14 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.get("/", (req, res) => {
+  res
+    .status(200)
+    .json({
+      message:
+        "Welcome to Bilaal's string analyzer, visit https://github.com/bilaalk079/bilaal-hng-stage-1 to view the README / Docs",
+    });
+});
 app.use("/strings", stringRoutes);
 
 // MongoDB connection
